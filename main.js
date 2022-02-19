@@ -55,7 +55,7 @@ document.writeln (
      <p><i>Сума решти:</i></p>${result}
      <p><i>Середнє значення цін:</i></p>${averagePrice}
      <p><i>Випадкова знижка:</i></p>${randomSale}
-     <p><i>Сума до сплати з випадковою знижкою:</i></p>${salePrice}
-     <p><i>Чистий прибуток:</i></p>${netProfit}
+     <p><i>Сума до сплати з випадковою знижкою:</i></p>${salePrice.toFixed(2)}
+     <p><i>Чистий прибуток:</i></p>${netProfit.toFixed(2)}
     `
 )
