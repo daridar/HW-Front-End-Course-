@@ -17,8 +17,6 @@ console.log(sum);
 let roundedNum = Math.floor(water) + Math.floor(butter) + Math.floor(oil);
 console.log(roundedNum);
  
-
-console.log(even(x))
 //округлення до сотень
 let roundNum = Math.round((sum) / 100) * 100
 console.log(roundNum);
