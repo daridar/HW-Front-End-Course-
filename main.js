@@ -1,47 +1,50 @@
-let water = 15.687
-let oil = 123.965
-let butter = 90.2345
+const water = 15.687
+const oil = 123.965
+const butter = 90.2345
 
-//
 
-let max = Math.max(water, oil, butter)
+const max = Math.max(water, oil, butter)
 console.log(max);
-let min = Math.min(water, oil, butter)
+const min = Math.min(water, oil, butter)
 console.log(min);
 
 //сума всіх товарів
-let sum = water + oil + butter
+const sum = water + oil + butter
 console.log(sum);
 
+//булеве значення
+const boolSum = sum % 2 === 0;
+console.log(Boolean(boolSum));
+
 //округлення суми всіх товарів в меншу сторону
-let roundedNum = Math.floor(water) + Math.floor(butter) + Math.floor(oil);
+const roundedNum = Math.floor(water) + Math.floor(butter) + Math.floor(oil);
 console.log(roundedNum);
  
 //округлення до сотень
-let roundNum = Math.round((sum) / 100) * 100
+const roundNum = Math.round((sum) / 100) * 100
 console.log(roundNum);
 
 //сума решти
-let payment = 500;
-let result = payment - sum;
+const payment = 500;
+const result = payment - sum;
 console.log(result);
 
 //середнє значення цін
-let averageSum = sum/3;
-let averagePrice = averageSum.toFixed(2);
+const averageSum = sum/3;
+const averagePrice = averageSum.toFixed(2);
 console.log(averagePrice);
 
 //випадкова знижка
-let randomSale = Math.floor(Math.random() * 100);
+const randomSale = Math.floor(Math.random() * 100);
 console.log(randomSale);
 
 //сума до сплати з випадковою знижкою
-let salePrice = sum - ((sum * randomSale) / 100);
+const salePrice = sum - ((sum * randomSale) / 100);
 console.log(salePrice.toFixed(2));
 
 //чистий прибуток
-let cost = (Math.floor(sum)) / 2;
-let netProfit = cost - ((Math.floor(sum) * randomSale)/100)
+const cost = (Math.floor(sum)) / 2;
+const netProfit = cost - ((Math.floor(sum) * randomSale)/100)
 console.log(netProfit.toFixed(2));
 
 document.writeln (
